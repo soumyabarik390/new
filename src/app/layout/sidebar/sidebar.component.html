@@ -1,0 +1,125 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" [routerLink]="['/dashboard']">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">ALPHICS TECH</div>
+    </a>
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/dashboard']">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#webPages"
+            aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Website Management</span>
+        </a>
+        <div id="webPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/website/homepage']">Home Page</a>
+                <a class="collapse-item" [routerLink]="['/website/aboutpage']">About Page</a>
+                <a class="collapse-item" [routerLink]="['/website/clientpage']">Client Page</a>                
+                <a class="collapse-item" [routerLink]="['/website/servicepage']">Service Page</a>
+                <a class="collapse-item" [routerLink]="['/website/teampage']">Team Page</a>
+                <a class="collapse-item" [routerLink]="['/website/portfoliopage']">Portfolio Page</a>
+                <a class="collapse-item" [routerLink]="['/website/investorpage']">Investor Page</a>
+                <a class="collapse-item" [routerLink]="['/website/privacypage']">Privacy Page</a>
+                <a class="collapse-item" [routerLink]="['/website/blankpage']">Blank Page</a>
+            </div>
+        </div>
+    </li>
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#blogPages"
+            aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-blog"></i>
+            <span>Blog Management</span>
+        </a>
+        <div id="blogPages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/blog/new']">New Blog</a>
+                <a class="collapse-item" [routerLink]="['/blog/all']">All Blogs</a>
+                <a class="collapse-item" [routerLink]="['/blog/category']">Category</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Career Management</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/career/applicant-details']">Applicant Details</a>
+                <a class="collapse-item" [routerLink]="['/career/job-details']">Job Details</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#teamManagement"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Team Management</span>
+        </a>
+        <div id="teamManagement" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/team/freelancer']">Freelancer</a>
+                <a class="collapse-item" [routerLink]="['/team/technical']">Technical</a>
+                <a class="collapse-item" [routerLink]="['/team/financial']">Financial</a>
+                <a class="collapse-item" [routerLink]="['/team/business']">Business Development</a>
+                <a class="collapse-item" [routerLink]="['/team/hr']">HR</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#clientManagement"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Client Management</span>
+        </a>
+        <div id="clientManagement" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/client/all']">All Clients</a>
+            </div>
+        </div>
+    </li>
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-tasks"></i>
+            <span>Project Management</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="['/project/all']">Project Report</a>
+            </div>
+        </div>
+    </li>
+    <!-- Divider -->
+    <!--<hr class="sidebar-divider">-->
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+
+</ul>

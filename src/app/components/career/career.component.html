@@ -1,0 +1,170 @@
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+  <h1 class="h3 mb-0 text-gray-800">Job Details</h1>
+  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#jobModal"> Add Job</a>
+</div>
+
+<div class="modal fade" id="jobModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New Job</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Job Title</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Job Location</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Employment Type</label>
+                      <select id="inputState" class="form-control">
+                          <option>Full Time</option>
+                          <option>Part Time</option>
+                          <option>Contract</option>
+                          <option>Temporary</option>
+                          <option>Volunteer</option>
+                          <option>Internship</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Job Description</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Last Date</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                  </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Submit</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Content Row -->
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+      <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead class="thead-light">
+                <tr>
+                  <th>#</th>
+                  <th>Job Title</th>
+                  <th>Start Date</th>
+                  <th>Last Date</th>
+                  <th>Employment Type</th>
+                  <th>Location</th>
+                  <th>Application No.</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td></td>
+                  <td>App design and development</td>
+                  <td>01/01/2015</td>
+                  <td>10/15/2018</td>
+                  <td></td>
+                  <td>Halette Boivin</td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal"
+                            data-target="#editclientModal">Edit</button>
+                        <button class="btn btn-secondary btn-sm" type="button"
+                            data-toggle="modal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td></td>
+                  <td>Coffee detail page - Main Page</td>
+                  <td>21/07/2016</td>
+                  <td>12/05/2018</td>
+                  <td>Durandana Jolicoeur</td>
+                  <td>Halette Boivin</td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal"
+                            data-target="#editclientModal">Edit</button>
+                        <button class="btn btn-secondary btn-sm" type="button"
+                            data-toggle="modal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td></td>
+                  <td>Poster illustation design</td>
+                  <td>18/03/2018</td>
+                  <td>28/09/2018</td>
+                  <td><span class="badge badge-pink">Done</span></td>
+                  <td>Lucas Sabourin</td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal"
+                            data-target="#editclientModal">Edit</button>
+                        <button class="btn btn-secondary btn-sm" type="button"
+                            data-toggle="modal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td></td>
+                  <td>Drinking bottle graphics</td>
+                  <td>02/10/2017</td>
+                  <td>07/05/2018</td>
+                  <td><span class="badge badge-purple">Work in Progress</span></td>
+                  <td>Donatien Brunelle</td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal"
+                            data-target="#editclientModal">Edit</button>
+                        <button class="btn btn-secondary btn-sm" type="button"
+                            data-toggle="modal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td></td>
+                  <td>Landing page design - Home</td>
+                  <td>17/01/2017</td>
+                  <td>25/05/2021</td>
+                  <td></td>
+                  <td><span class="badge badge-warning">Coming soon</span></td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="modal"
+                            data-target="#editclientModal">Edit</button>
+                        <button class="btn btn-secondary btn-sm" type="button"
+                            data-toggle="modal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+      </div>
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+<!-- /.container-fluid -->
