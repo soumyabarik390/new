@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DataTablesModule} from 'angular-datatables';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [	
     AppComponent,
@@ -17,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     DataTablesModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
